@@ -49,5 +49,27 @@
 	    </pluginRepository>
 	</pluginRepositories>
 
+	 <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.10.1</version> <!-- Updated version -->
+                <configuration>
+                    <source>${maven.compiler.source}</source>
+                    <target>${maven.compiler.target}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>3.3.2</version> <!-- Updated version -->
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml> <!-- Optional: if using Servlet 3.0+ -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 	
 </project>
