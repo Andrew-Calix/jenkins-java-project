@@ -68,7 +68,7 @@
                     <failOnMissingWebXml>false</failOnMissingWebXml> <!-- Optional: if using Servlet 3.0+ -->
                 </configuration>
             </plugin>
-	    <plugin>
+	 <plugin>
             <groupId>org.sonarsource.scanner.maven</groupId>
             <artifactId>sonar-maven-plugin</artifactId>
             <version>4.0.0.4121</version> <!-- Specify the plugin version here -->
